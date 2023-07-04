@@ -1,17 +1,14 @@
 // Function to save the attendance data
 function saveAttendance(event) {
-  event.preventDefault(); // Prevent form submission
+   event.preventDefault(); // Prevent form submission
 
     const modeSelect = document.getElementById('mode');
     const datetimeInput = document.getElementById('datetime');
 
-    const mode = modeSelect.value;
+    const mode = modeSelect.value;//modeselect is a reference to the html page whereas mode is the selected value
     const datetime = datetimeInput.value;
-
-    const attendanceData = {
-    mode,
-    datetime
-    };
+    
+    const attendanceData = {mode,datetime};
 
   // Save attendance data to local storage or perform other operations as needed
   // Example: Save data to an array
