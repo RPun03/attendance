@@ -33,11 +33,11 @@ function updateAttendanceList() {
     attendanceList.innerHTML = '';
 
   // Create a new list item for each attendance entry
-    attendance.forEach(function(data) {
+    /*attendance.forEach(function(data) {
     const listItem = document.createElement('div');
     listItem.textContent = `Mode: ${data.mode}, Datetime: ${data.datetime}`;
     attendanceList.appendChild(listItem);
-    });
+    });*/
 }
 
 // Array to store attendance data
